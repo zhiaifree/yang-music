@@ -1,0 +1,9 @@
+server:
+  port: 80
+spring:
+  application:
+    name: yangMusic
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST}:3306/${DATABASE_NAME}?characterEncoding=UTF8&userSSL=false
+    username: ${MYSQL_USER_NAME}
+    password: ${MYSQL_PASSWORD}
