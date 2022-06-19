@@ -1,4 +1,4 @@
-FROM openjdk:8 as build
+FROM maven:4.0.0-jdk-8-slim as build
 
 #指定构建过程中的工作目录
 WORKDIR /app
