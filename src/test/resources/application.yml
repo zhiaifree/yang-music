@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: music
+  datasource:
+    url: jdbc:mysql://localhost:3306/${DATABASE_NAME}?characterEncoding=UTF8&userSSL=false
+    username: root
+    password: 123456
+    #driver-class-name: org.h2.Driver
+  sql:
+    init:
+      platform: h2
+      continue-on-error: false
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      format_sql: true
